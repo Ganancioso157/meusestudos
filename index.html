@@ -5,7 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Meu TCC | André</title>
+    <title>Simulação Numérica de Reação Exotérmica em Reservatórios | André</title>
+
+    <!-- Fonte opcional para visual mais profissional -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -16,7 +21,7 @@
         <div class="container nav-content">
 
             <a href="#" class="logo">
-                Meu TCC
+                TCC · André
             </a>
 
             <nav>
@@ -32,7 +37,7 @@
 
     <main>
 
-        <!-- CAPA -->
+        <!-- CAPA / HERO -->
 
         <section class="hero">
 
@@ -41,7 +46,9 @@
                 <span class="tag">TRABALHO DE CONCLUSÃO DE CURSO</span>
 
                 <h1>
-                    Título do seu Trabalho de Conclusão de Curso
+                    Simulação Numérica da Distribuição de Temperatura
+                    e Transporte de Massa de uma Reação Exotérmica
+                    em Reservatórios de Petróleo
                 </h1>
 
                 <p class="autor">
@@ -49,7 +56,7 @@
                 </p>
 
                 <p class="instituicao">
-                    Nome da sua instituição
+                    Engenharia de Reservatórios · 2026
                 </p>
 
                 <div class="botoes">
@@ -85,10 +92,28 @@
                 <h2>Sobre o trabalho</h2>
 
                 <p>
-                    Este trabalho apresenta uma pesquisa sobre
-                    <strong>coloque aqui o tema do seu TCC</strong>.
-                    O estudo busca analisar, compreender e apresentar
-                    informações relevantes relacionadas ao tema escolhido.
+                    Este trabalho investiga, por meio de
+                    <strong>simulação numérica</strong>, a distribuição de temperatura
+                    resultante do transporte de energia e de massa (nitrogênio)
+                    liberados pela <strong>reação exotérmica de uma mistura binária
+                    injetada em um reservatório de petróleo</strong>.
+                </p>
+
+                <p>
+                    A pesquisa insere-se no contexto dos métodos térmicos de
+                    recuperação avançada (EOR) para óleos pesados e ultrapesados,
+                    propondo uma alternativa à injeção convencional de vapor:
+                    a geração <em>in situ</em> de calor e pressão por meio de
+                    reações termoquímicas envolvendo cloreto de amônio (NH₄Cl)
+                    e nitrito de sódio (NaNO₂), capazes de gerar calor, vapor
+                    e nitrogênio (N₂) diretamente na formação.
+                </p>
+
+                <p>
+                    O estudo emprega a analogia formal entre a Lei de Darcy,
+                    a Lei de Fourier e a Lei de Fick para construir um modelo
+                    numérico unificado de transporte de massa e energia em
+                    meios porosos, em geometria radial.
                 </p>
 
             </div>
@@ -113,7 +138,11 @@
                         <h3>Objetivo geral</h3>
 
                         <p>
-                            Coloque aqui o objetivo geral do seu TCC.
+                            Investigar, por meio de simulação numérica, a
+                            distribuição de temperatura resultante do transporte
+                            de energia e de massa (nitrogênio) liberados da
+                            reação exotérmica de uma mistura binária injetada
+                            em um reservatório de petróleo.
                         </p>
 
                     </div>
@@ -122,10 +151,12 @@
 
                         <h3>Objetivos específicos</h3>
 
-                        <p>
-                            Apresente aqui os principais objetivos
-                            específicos da pesquisa.
-                        </p>
+                        <ul>
+                            <li>Desenvolver uma ferramenta numérica para investigar a reação exotérmica;</li>
+                            <li>Reproduzir soluções analíticas de referência (fluxo radial de massa monofásico e bifásico e difusão de energia radial em meio poroso) para verificação e validação do modelo numérico empregado;</li>
+                            <li>Avaliar o efeito da quantidade de energia liberada pela reação exotérmica sobre a distribuição de temperatura no reservatório;</li>
+                            <li>Avaliar o efeito da quantidade de nitrogênio liberado na reação exotérmica sobre a distribuição de temperatura no reservatório.</li>
+                        </ul>
 
                     </div>
 
@@ -147,9 +178,41 @@
                 <h2>Metodologia</h2>
 
                 <p>
-                    Explique aqui como a pesquisa foi realizada,
-                    quais métodos foram utilizados, quais fontes
-                    foram consultadas e como os dados foram analisados.
+                    A fundamentação teórica parte dos conceitos clássicos de
+                    engenharia de reservatórios e é complementada pelos
+                    fundamentos de transferência de calor, transporte de massa
+                    e reação química necessários à formulação do problema
+                    numérico.
+                </p>
+
+                <p>
+                    O modelo emprega a <strong>equação da difusividade hidráulica</strong>
+                    em coordenadas radiais, a <strong>Lei de Fourier</strong> para
+                    condução de calor e a <strong>Lei de Fick</strong> para difusão
+                    molecular, unificadas por analogia matemática formal. A reação
+                    exotérmica é representada por:
+                </p>
+
+                <p class="formula">
+                    NH₄Cl + NaNO₂ → N₂ + NaCl + 2H₂O
+                </p>
+
+                <p>
+                    A ferramenta numérica é validada por comparação com soluções
+                    analíticas de referência (fluxo radial permanente, regime
+                    pseudopermanente e difusão radial de energia). Em seguida,
+                    são realizados estudos paramétricos variando a quantidade
+                    de energia e de nitrogênio liberados pela reação, de modo
+                    a avaliar seus efeitos sobre o campo de temperatura no
+                    reservatório.
+                </p>
+
+                <p>
+                    A abordagem segue a progressão lógica: classificação
+                    termodinâmica de reservatórios → propriedades PVT e de rocha
+                    → métodos térmicos de recuperação → fluxo em meios porosos
+                    → transferência de energia → transporte de massa →
+                    reação exotérmica.
                 </p>
 
             </div>
@@ -166,7 +229,9 @@
                 <h2>Documento completo</h2>
 
                 <p>
-                    Acesse o trabalho completo em formato PDF.
+                    Acesse o trabalho completo em formato PDF, com toda a
+                    fundamentação teórica, equações, referências e
+                    desenvolvimento do modelo numérico.
                 </p>
 
                 <a
