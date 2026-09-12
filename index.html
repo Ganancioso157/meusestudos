@@ -5,12 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Simulação Numérica de Reação Exotérmica em Reservatórios | André</title>
-
-    <!-- Fonte opcional para visual mais profissional -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Simulação Numérica de Reação Exotérmica | André</title>
 
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -20,9 +15,7 @@
     <header class="navbar">
         <div class="container nav-content">
 
-            <a href="#" class="logo">
-                TCC · André
-            </a>
+            <a href="#" class="logo">TCC · André</a>
 
             <nav>
                 <a href="#sobre">Sobre</a>
@@ -34,13 +27,10 @@
         </div>
     </header>
 
-
     <main>
 
-        <!-- CAPA / HERO -->
-
+        <!-- CAPA -->
         <section class="hero">
-
             <div class="container hero-content">
 
                 <span class="tag">TRABALHO DE CONCLUSÃO DE CURSO</span>
@@ -51,44 +41,25 @@
                     em Reservatórios de Petróleo
                 </h1>
 
-                <p class="autor">
-                    André
-                </p>
-
-                <p class="instituicao">
-                    Engenharia de Reservatórios · 2026
-                </p>
+                <p class="autor">André</p>
+                <p class="instituicao">Engenharia de Reservatórios · 2026</p>
 
                 <div class="botoes">
-
-                    <a
-                        href="./arquivos/TCC - André.pdf"
-                        target="_blank"
-                        class="btn principal">
+                    <a href="./arquivos/TCC - André.pdf" target="_blank" class="btn principal">
                         📄 Abrir TCC em PDF
                     </a>
-
-                    <a
-                        href="#sobre"
-                        class="btn secundario">
+                    <a href="#sobre" class="btn secundario">
                         Conhecer o trabalho
                     </a>
-
                 </div>
 
             </div>
-
         </section>
 
-
         <!-- SOBRE -->
-
         <section id="sobre" class="secao">
-
             <div class="container">
-
                 <span class="numero">01</span>
-
                 <h2>Sobre o trabalho</h2>
 
                 <p>
@@ -105,8 +76,7 @@
                     propondo uma alternativa à injeção convencional de vapor:
                     a geração <em>in situ</em> de calor e pressão por meio de
                     reações termoquímicas envolvendo cloreto de amônio (NH₄Cl)
-                    e nitrito de sódio (NaNO₂), capazes de gerar calor, vapor
-                    e nitrogênio (N₂) diretamente na formação.
+                    e nitrito de sódio (NaNO₂).
                 </p>
 
                 <p>
@@ -115,28 +85,19 @@
                     numérico unificado de transporte de massa e energia em
                     meios porosos, em geometria radial.
                 </p>
-
             </div>
-
         </section>
 
-
         <!-- OBJETIVOS -->
-
         <section id="objetivos" class="secao destaque">
-
             <div class="container">
-
                 <span class="numero">02</span>
-
                 <h2>Objetivos</h2>
 
                 <div class="cards">
 
                     <div class="card">
-
                         <h3>Objetivo geral</h3>
-
                         <p>
                             Investigar, por meio de simulação numérica, a
                             distribuição de temperatura resultante do transporte
@@ -144,37 +105,26 @@
                             reação exotérmica de uma mistura binária injetada
                             em um reservatório de petróleo.
                         </p>
-
                     </div>
 
                     <div class="card">
-
                         <h3>Objetivos específicos</h3>
-
-                        <ul>
+                        <ul class="ulColn">
                             <li>Desenvolver uma ferramenta numérica para investigar a reação exotérmica;</li>
-                            <li>Reproduzir soluções analíticas de referência (fluxo radial de massa monofásico e bifásico e difusão de energia radial em meio poroso) para verificação e validação do modelo numérico empregado;</li>
-                            <li>Avaliar o efeito da quantidade de energia liberada pela reação exotérmica sobre a distribuição de temperatura no reservatório;</li>
-                            <li>Avaliar o efeito da quantidade de nitrogênio liberado na reação exotérmica sobre a distribuição de temperatura no reservatório.</li>
+                            <li>Reproduzir soluções analíticas de referência para verificação e validação do modelo numérico;</li>
+                            <li>Avaliar o efeito da quantidade de energia liberada sobre a distribuição de temperatura;</li>
+                            <li>Avaliar o efeito da quantidade de nitrogênio liberado sobre a distribuição de temperatura.</li>
                         </ul>
-
                     </div>
 
                 </div>
-
             </div>
-
         </section>
 
-
         <!-- METODOLOGIA -->
-
         <section id="metodologia" class="secao">
-
             <div class="container">
-
                 <span class="numero">03</span>
-
                 <h2>Metodologia</h2>
 
                 <p>
@@ -189,71 +139,44 @@
                     O modelo emprega a <strong>equação da difusividade hidráulica</strong>
                     em coordenadas radiais, a <strong>Lei de Fourier</strong> para
                     condução de calor e a <strong>Lei de Fick</strong> para difusão
-                    molecular, unificadas por analogia matemática formal. A reação
-                    exotérmica é representada por:
+                    molecular, unificadas por analogia matemática formal.
+                    A reação exotérmica é representada por:
                 </p>
 
-                <p class="formula">
+                <p id="formula">
                     NH₄Cl + NaNO₂ → N₂ + NaCl + 2H₂O
                 </p>
 
                 <p>
                     A ferramenta numérica é validada por comparação com soluções
-                    analíticas de referência (fluxo radial permanente, regime
-                    pseudopermanente e difusão radial de energia). Em seguida,
-                    são realizados estudos paramétricos variando a quantidade
-                    de energia e de nitrogênio liberados pela reação, de modo
-                    a avaliar seus efeitos sobre o campo de temperatura no
-                    reservatório.
+                    analíticas de referência. Em seguida, são realizados estudos
+                    paramétricos variando a quantidade de energia e de nitrogênio
+                    liberados pela reação, de modo a avaliar seus efeitos sobre
+                    o campo de temperatura no reservatório.
                 </p>
-
-                <p>
-                    A abordagem segue a progressão lógica: classificação
-                    termodinâmica de reservatórios → propriedades PVT e de rocha
-                    → métodos térmicos de recuperação → fluxo em meios porosos
-                    → transferência de energia → transporte de massa →
-                    reação exotérmica.
-                </p>
-
             </div>
-
         </section>
 
-
         <!-- DOCUMENTO -->
-
         <section id="documento" class="documento">
-
             <div class="container">
-
                 <h2>Documento completo</h2>
-
                 <p>
                     Acesse o trabalho completo em formato PDF, com toda a
                     fundamentação teórica, equações, referências e
                     desenvolvimento do modelo numérico.
                 </p>
 
-                <a
-                    href="./arquivos/TCC - André.pdf"
-                    target="_blank"
-                    class="btn principal">
+                <a href="./arquivos/TCC - André.pdf" target="_blank" class="btn principal">
                     📖 Ler o TCC completo
                 </a>
-
             </div>
-
         </section>
 
     </main>
 
-
-    <footer>
-
-        <p>
-            © 2026 André — Trabalho de Conclusão de Curso
-        </p>
-
+    <footer class="ending">
+        <p>© 2026 André — Trabalho de Conclusão de Curso</p>
     </footer>
 
 </body>
